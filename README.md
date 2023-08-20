@@ -27,4 +27,4 @@ Language
 
 ![mekind's GitHub stats](https://github-readme-stats.vercel.app/api?username=mekind&show_icons=true&theme=radical)
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hogisim314)](https://solved.ac/mekind/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=mekind)](https://solved.ac/mekind/)
