@@ -20,6 +20,7 @@ Language
  > <img src="https://img.shields.io/badge/C-A8B9CC?style=plastic&logo=C&logoColor=#3776AB"/>
  > <img src="https://img.shields.io/badge/C++-00599C?style=plastic&logo=c++&logoColor=#A8B9CC"/>
  > <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=#E0234E"/>
+ > <img src="https://img.shields.io/badge/typescript-#3178C6"/>
 
 ![mekind's GitHub stats](https://github-readme-stats.vercel.app/api?username=mekind&show_icons=true&theme=radical)
 
