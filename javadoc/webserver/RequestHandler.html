@@ -97,6 +97,11 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">RequestHandler</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a></span></div>
+<div class="block">클라이언트의 HTTP 요청을 처리하는 핸들러 클래스입니다.
+ <p>
+ 이 클래스는 Runnable 인터페이스를 구현하여 멀티스레드 환경에서 각 클라이언트 연결을 독립적으로 처리할 수 있습니다. AOP(Aspect-Oriented
+ Programming) 패턴을 사용하여 요청 처리 과정에서 횡단 관심사를 분리하여 처리합니다.
+ </p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -109,7 +114,9 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.net.Socket)" class="member-name-link">RequestHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/Socket.html" title="class or interface in java.net" class="external-link">Socket</a>&nbsp;connectionSocket)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">RequestHandler의 생성자입니다.</div>
+</div>
 </div>
 </section>
 </li>
@@ -126,7 +133,9 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#run()" class="member-name-link">run</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">클라이언트의 HTTP 요청을 처리하는 메인 실행 메서드입니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -148,6 +157,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <section class="detail" id="&lt;init&gt;(java.net.Socket)">
 <h3>RequestHandler</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RequestHandler</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/Socket.html" title="class or interface in java.net" class="external-link">Socket</a>&nbsp;connectionSocket)</span></div>
+<div class="block">RequestHandler의 생성자입니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>connectionSocket</code> - 클라이언트와의 연결을 나타내는 Socket 객체</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -162,9 +176,21 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <section class="detail" id="run()">
 <h3>run</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">run</span>()</div>
+<div class="block">클라이언트의 HTTP 요청을 처리하는 메인 실행 메서드입니다.
+ <p>
+ 이 메서드는 다음과 같은 과정으로 요청을 처리합니다:
+ <ol>
+ <li>클라이언트로부터 HTTP 요청을 파싱합니다</li>
+ <li>AOP 어드바이스를 적용하여 횡단 관심사를 처리합니다</li>
+ <li>등록된 SubHandler들 중 요청을 처리할 수 있는 핸들러를 찾아 실행합니다</li>
+ <li>적절한 핸들러가 없는 경우 404 또는 405 등 오류를 발생시킵니다</li>
+ </ol>
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Runnable.html#run()" title="class or interface in java.lang" class="external-link">run</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code> - 요청 처리 중 발생할 수 있는 모든 예외</dd>
 </dl>
 </section>
 </li>

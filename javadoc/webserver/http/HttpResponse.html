@@ -97,6 +97,11 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">HttpResponse</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
 implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></span></div>
+<div class="block">HTTP 응답을 구성하고 클라이언트에게 전송하는 클래스입니다.
+ <p>
+ 이 클래스는 HTTP 응답의 상태 코드, 헤더, 쿠키, 본문 등을 설정하고 클라이언트에게 완전한 HTTP 응답을 전송하는 기능을 제공합니다. AutoCloseable
+ 인터페이스를 구현하여 자원 관리를 자동화합니다.
+ </p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -109,7 +114,9 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.io.OutputStream)" class="member-name-link">HttpResponse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/OutputStream.html" title="class or interface in java.io" class="external-link">OutputStream</a>&nbsp;out)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">HttpResponse 객체를 생성합니다.</div>
+</div>
 </div>
 </section>
 </li>
@@ -126,44 +133,70 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addAllowedMethod(webserver.http.enums.HttpMethod)" class="member-name-link">addAllowedMethod</a><wbr>(<a href="enums/HttpMethod.html" title="enum class in webserver.http.enums">HttpMethod</a>&nbsp;method)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">허용된 HTTP 메서드를 추가합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">출력 스트림을 닫고 자원을 해제합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHeaderSection()" class="member-name-link">getHeaderSection</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 헤더 섹션을 문자열로 반환합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStatus()" class="member-name-link">getStatus</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">현재 설정된 HTTP 상태 코드와 메시지를 문자열로 반환합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStatusLine()" class="member-name-link">getStatusLine</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 상태 라인을 문자열로 반환합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEmptyAllowedMethod()" class="member-name-link">isEmptyAllowedMethod</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">허용된 HTTP 메서드가 설정되어 있는지 확인합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#send()" class="member-name-link">send</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">구성된 HTTP 응답을 클라이언트에게 전송합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBody(java.io.File)" class="member-name-link">setBody</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">파일의 내용을 응답 본문으로 설정합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBody(java.lang.String)" class="member-name-link">setBody</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;body)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">문자열을 응답 본문으로 설정합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCookie(webserver.http.cookie.CookieResponse)" class="member-name-link">setCookie</a><wbr>(<a href="cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a>&nbsp;cookie)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 응답에 쿠키를 추가합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setHeader(java.io.File)" class="member-name-link">setHeader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">파일 정보를 기반으로 적절한 HTTP 헤더를 자동으로 설정합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setHeader(java.lang.String,java.lang.String)" class="member-name-link">setHeader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 헤더를 설정합니다.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setStatus(webserver.http.enums.HttpStatus)" class="member-name-link">setStatus</a><wbr>(<a href="enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a>&nbsp;status)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 응답의 상태를 설정합니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -185,6 +218,11 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <section class="detail" id="&lt;init&gt;(java.io.OutputStream)">
 <h3>HttpResponse</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">HttpResponse</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/OutputStream.html" title="class or interface in java.io" class="external-link">OutputStream</a>&nbsp;out)</span></div>
+<div class="block">HttpResponse 객체를 생성합니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>out</code> - 클라이언트로 데이터를 전송할 OutputStream</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -199,24 +237,47 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <section class="detail" id="getStatus()">
 <h3>getStatus</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getStatus</span>()</div>
+<div class="block">현재 설정된 HTTP 상태 코드와 메시지를 문자열로 반환합니다.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>"상태코드 상태메시지" 형식의 문자열 (예: "200 OK")</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setStatus(webserver.http.enums.HttpStatus)">
 <h3>setStatus</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setStatus</span><wbr><span class="parameters">(<a href="enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a>&nbsp;status)</span></div>
+<div class="block">HTTP 응답의 상태를 설정합니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>status</code> - 설정할 HTTP 상태</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setBody(java.io.File)">
 <h3>setBody</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setBody</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</span></div>
+<div class="block">파일의 내용을 응답 본문으로 설정합니다.
+ <p>
+ 파일을 읽어 바이트 배열로 변환하여 응답 본문에 저장합니다. 파일 읽기 중 오류가 발생하면 로그에 기록됩니다.
+ </p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>file</code> - 응답 본문으로 사용할 파일</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setBody(java.lang.String)">
 <h3>setBody</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setBody</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;body)</span></div>
+<div class="block">문자열을 응답 본문으로 설정합니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>body</code> - 응답 본문으로 사용할 문자열</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -224,48 +285,97 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <h3>setHeader</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setHeader</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">HTTP 헤더를 설정합니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - 헤더 이름</dd>
+<dd><code>value</code> - 헤더 값</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setHeader(java.io.File)">
 <h3>setHeader</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setHeader</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</span></div>
+<div class="block">파일 정보를 기반으로 적절한 HTTP 헤더를 자동으로 설정합니다.
+ <p>
+ Content-Length와 Content-Type 헤더를 자동으로 설정합니다. Content-Type은 파일 확장자를 기반으로 추정됩니다.
+ </p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>file</code> - 헤더 정보를 추출할 파일</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setCookie(webserver.http.cookie.CookieResponse)">
 <h3>setCookie</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCookie</span><wbr><span class="parameters">(<a href="cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a>&nbsp;cookie)</span></div>
+<div class="block">HTTP 응답에 쿠키를 추가합니다.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cookie</code> - 추가할 쿠키 객체</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addAllowedMethod(webserver.http.enums.HttpMethod)">
 <h3>addAllowedMethod</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addAllowedMethod</span><wbr><span class="parameters">(<a href="enums/HttpMethod.html" title="enum class in webserver.http.enums">HttpMethod</a>&nbsp;method)</span></div>
+<div class="block">허용된 HTTP 메서드를 추가합니다.
+ <p>
+ 이 정보는 Allow 헤더에 포함되어 클라이언트에게 전달됩니다. 405 Method Not Allowed 응답에서 주로 사용됩니다.
+ </p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>method</code> - 허용할 HTTP 메서드</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isEmptyAllowedMethod()">
 <h3>isEmptyAllowedMethod</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isEmptyAllowedMethod</span>()</div>
+<div class="block">허용된 HTTP 메서드가 설정되어 있는지 확인합니다.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>허용된 메서드가 없으면 true, 있으면 false</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="send()">
 <h3>send</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">send</span>()</div>
+<div class="block">구성된 HTTP 응답을 클라이언트에게 전송합니다.
+ <p>
+ 상태 라인, 헤더, 본문을 순서대로 전송합니다. 전송 중 오류가 발생하면 로그에 기록됩니다.
+ </p></div>
 </section>
 </li>
 <li>
 <section class="detail" id="getStatusLine()">
 <h3>getStatusLine</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getStatusLine</span>()</div>
+<div class="block">HTTP 상태 라인을 문자열로 반환합니다.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>"HTTP버전 상태코드 상태메시지\r\n" 형식의 상태 라인</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getHeaderSection()">
 <h3>getHeaderSection</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getHeaderSection</span>()</div>
+<div class="block">HTTP 헤더 섹션을 문자열로 반환합니다.
+ <p>
+ 설정된 모든 헤더, 쿠키, 허용된 메서드 정보를 포함합니다.
+ </p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>완전한 HTTP 헤더 섹션 문자열</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -273,11 +383,12 @@ implements <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base
 <h3>close</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">close</span>()
            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">출력 스트림을 닫고 자원을 해제합니다.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/AutoCloseable.html#close()" title="class or interface in java.lang" class="external-link">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></code></dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - 스트림 닫기 중 오류가 발생한 경우</dd>
 </dl>
 </section>
 </li>

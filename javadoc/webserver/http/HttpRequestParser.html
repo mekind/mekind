@@ -92,6 +92,21 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">HttpRequestParser</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">HTTP 요청을 파싱하여 HttpRequest 객체로 변환하는 유틸리티 클래스입니다.
+ <p>
+ 이 클래스는 클라이언트로부터 받은 원시 HTTP 요청 데이터를 분석하여 구조화된 HttpRequest 객체로 변환합니다. 파싱 과정은 다음과 같습니다:
+ </p>
+ <ol>
+ <li><strong>요청 라인 파싱:</strong> HTTP 메서드, 경로, 버전 정보 추출</li>
+ <li><strong>헤더 파싱:</strong> 모든 HTTP 헤더와 특별한 헤더(쿠키, Content-Type 등) 처리</li>
+ <li><strong>본문 파싱:</strong> Content-Length를 기반으로 본문 데이터 읽기 및 적절한 BodyParser로
+ 처리</li>
+ </ol>
+
+ <p>
+ <code>@BodyParser</code> 어노테이션이 적용된 파서들을 자동으로 스캔하여
+ 다양한 Content-Type(form-urlencoded, multipart/form-data 등)을 처리할 수 있습니다.
+ </p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -121,7 +136,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="HttpRequest.html" title="class in webserver.http">HttpRequest</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#parse(java.io.InputStream)" class="member-name-link">parse</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">InputStream에서 HTTP 요청을 파싱하여 HttpRequest 객체를 생성합니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -158,9 +175,23 @@ loadScripts(document, 'script');</script>
 <h3>parse</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="HttpRequest.html" title="class in webserver.http">HttpRequest</a></span>&nbsp;<span class="element-name">parse</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream)</span>
                          throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block">InputStream에서 HTTP 요청을 파싱하여 HttpRequest 객체를 생성합니다.
+ <p>
+ 이 메서드는 HTTP 요청의 모든 구성 요소를 순차적으로 파싱합니다:
+ </p>
+ <ul>
+ <li>요청 라인에서 메서드, 경로, 쿼리 파라미터, HTTP 버전 추출</li>
+ <li>헤더에서 Content-Type, Cookie 등의 정보 추출</li>
+ <li>본문에서 데이터를 읽고 적절한 BodyParser로 처리</li>
+ </ul></div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>inputStream</code> - 클라이언트로부터 받은 HTTP 요청 데이터를 포함한 입력 스트림</dd>
+<dt>Returns:</dt>
+<dd>파싱된 HTTP 요청 정보를 담은 HttpRequest 객체</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - HTTP 요청 파싱 중 입출력 오류가 발생한 경우</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - 잘못된 형식의 HTTP 요청인 경우</dd>
 </dl>
 </section>
 </li>

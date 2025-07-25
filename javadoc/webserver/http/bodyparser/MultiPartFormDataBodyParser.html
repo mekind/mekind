@@ -126,10 +126,14 @@ implements <a href="BaseBodyParser.html" title="interface in webserver.http.body
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parse(webserver.http.HttpRequest)" class="member-name-link">parse</a><wbr>(<a href="../HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;req)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">HTTP 요청 본문을 파싱하여 HttpRequest 객체에 데이터를 저장합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#supports(webserver.http.enums.HttpConstant)" class="member-name-link">supports</a><wbr>(<a href="../enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a>&nbsp;contentType)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">이 파서가 특정 Content-Type을 지원하는지 확인합니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -166,11 +170,23 @@ implements <a href="BaseBodyParser.html" title="interface in webserver.http.body
 <h3>parse</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">parse</span><wbr><span class="parameters">(<a href="../HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;req)</span>
            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="BaseBodyParser.html#parse(webserver.http.HttpRequest)">BaseBodyParser</a></code></span></div>
+<div class="block">HTTP 요청 본문을 파싱하여 HttpRequest 객체에 데이터를 저장합니다.
+ <p>
+ 이 메서드는 request.body의 원시 바이트 데이터를 분석하여 적절한 형태로 변환한 후 다음 필드들에 저장합니다:
+ </p>
+ <ul>
+ <li><strong>request.params:</strong> 폼 데이터의 key-value 쌍</li>
+ <li><strong>request.files:</strong> 업로드된 파일 경로 목록 (multipart/form-data인
+ 경우)</li>
+ </ul></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="BaseBodyParser.html#parse(webserver.http.HttpRequest)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="BaseBodyParser.html" title="interface in webserver.http.bodyparser">BaseBodyParser</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>req</code> - 파싱할 HTTP 요청 객체 (body, contentType, charset 등의 정보 포함)</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></code> - 본문 파싱 중 입출력 오류가 발생한 경우</dd>
 </dl>
 </section>
 </li>
@@ -178,9 +194,19 @@ implements <a href="BaseBodyParser.html" title="interface in webserver.http.body
 <section class="detail" id="supports(webserver.http.enums.HttpConstant)">
 <h3>supports</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">supports</span><wbr><span class="parameters">(<a href="../enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a>&nbsp;contentType)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="BaseBodyParser.html#supports(webserver.http.enums.HttpConstant)">BaseBodyParser</a></code></span></div>
+<div class="block">이 파서가 특정 Content-Type을 지원하는지 확인합니다.
+ <p>
+ HttpRequestParser는 이 메서드를 사용하여 적절한 파서를 선택합니다. 각 구현체는 자신이 처리할 수 있는 Content-Type에 대해서만 true를 반환해야
+ 합니다.
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="BaseBodyParser.html#supports(webserver.http.enums.HttpConstant)">supports</a></code>&nbsp;in interface&nbsp;<code><a href="BaseBodyParser.html" title="interface in webserver.http.bodyparser">BaseBodyParser</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>contentType</code> - 확인할 HTTP Content-Type</dd>
+<dt>Returns:</dt>
+<dd>이 파서가 해당 Content-Type을 처리할 수 있으면 true, 그렇지 않으면 false</dd>
 </dl>
 </section>
 </li>

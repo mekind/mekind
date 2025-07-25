@@ -38,7 +38,7 @@ loadScripts(document, 'script');</script>
 <li>
 <p>Summary:</p>
 <ul>
-<li><a href="#nested-class-summary">Nested</a></li>
+<li>Nested</li>
 <li>Field</li>
 <li><a href="#constructor-summary">Constr</a></li>
 <li><a href="#method-summary">Method</a></li>
@@ -58,7 +58,7 @@ loadScripts(document, 'script');</script>
 <div id="navbar-sub-list">
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -97,23 +97,6 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<li>
-<section class="nested-class-summary" id="nested-class-summary">
-<h2>Nested Class Summary</h2>
-<div class="caption"><span>Nested Classes</span></div>
-<div class="summary-table three-column-summary">
-<div class="table-header col-first">Modifier and Type</div>
-<div class="table-header col-second">Class</div>
-<div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="SessionManager.Session.html" class="type-name-link" title="class in session">SessionManager.Session</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">사용자 세션 정보를 담는 내부 클래스입니다.</div>
-</div>
-</div>
-</section>
-</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -143,20 +126,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">모든 세션을 제거합니다.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="SessionManager.Session.html" title="class in session">SessionManager.Session</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#generateSessionId(model.User)" class="member-name-link">generateSessionId</a><wbr>(<a href="../model/User.html" title="class in model">User</a>&nbsp;user)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../model/User.html" title="class in model">User</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getUser(java.lang.String)" class="member-name-link">getUser</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sessionId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">사용자에 대한 새로운 세션을 생성합니다.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../model/User.html" title="class in model">User</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getUser(java.lang.String)" class="member-name-link">getUser</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sessionId)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">세션 ID에 해당하는 사용자 정보를 반환합니다.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isAuthenticated(java.lang.String)" class="member-name-link">isAuthenticated</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sessionId)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">주어진 세션 ID가 유효한 인증된 세션인지 확인합니다.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loginUser(model.User)" class="member-name-link">loginUser</a><wbr>(<a href="../model/User.html" title="class in model">User</a>&nbsp;user)</code></div>
@@ -225,32 +198,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>sessionId</code> - 종료할 세션 ID</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="generateSessionId(model.User)">
-<h3>generateSessionId</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="SessionManager.Session.html" title="class in session">SessionManager.Session</a></span>&nbsp;<span class="element-name">generateSessionId</span><wbr><span class="parameters">(<a href="../model/User.html" title="class in model">User</a>&nbsp;user)</span></div>
-<div class="block">사용자에 대한 새로운 세션을 생성합니다.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>user</code> - 세션을 생성할 사용자 객체</dd>
-<dt>Returns:</dt>
-<dd>생성된 세션 객체</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="isAuthenticated(java.lang.String)">
-<h3>isAuthenticated</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isAuthenticated</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sessionId)</span></div>
-<div class="block">주어진 세션 ID가 유효한 인증된 세션인지 확인합니다. 세션이 만료된 경우 자동으로 제거됩니다.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>sessionId</code> - 확인할 세션 ID</dd>
-<dt>Returns:</dt>
-<dd>유효한 세션인 경우 true, 그렇지 않으면 false</dd>
 </dl>
 </section>
 </li>

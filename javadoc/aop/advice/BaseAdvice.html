@@ -92,6 +92,24 @@ loadScripts(document, 'script');</script>
 </dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">BaseAdvice</span></div>
+<div class="block">AOP(Aspect-Oriented Programming) 어드바이스들의 기본 인터페이스입니다.
+ <p>
+ 이 인터페이스를 구현하는 클래스들은 HTTP 요청 처리 과정에서 횡단 관심사(cross-cutting concerns)를 처리합니다. 비즈니스 로직과 분리하여 인증, 로깅,
+ 보안 등의 공통 기능을 모듈화하고 재사용 가능하게 만듭니다.
+ </p>
+
+ <p>
+ 현재 지원되는 구현체들:
+ </p>
+ <ul>
+ <li><strong>LoggingAdvice:</strong> HTTP 요청과 응답을 로깅</li>
+ <li><strong>AuthAdvice:</strong> 세션 기반 인증 및 권한 검사</li>
+ </ul>
+
+ <p>
+ 구현 클래스들은 <code>@Advice</code> 어노테이션을 사용하여 자동으로 스캔되고
+ <a href="../../webserver/RequestHandler.html" title="class in webserver"><code>RequestHandler</code></a>에서 <a href="../AspectRunner.html" title="class in aop"><code>AspectRunner</code></a>를 통해 실행됩니다.
+ </p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -109,11 +127,15 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#after(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">after</a><wbr>(<a href="../../webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;request,
  <a href="../../webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a>&nbsp;response)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">HTTP 요청 처리 후에 실행되는 후처리 메서드입니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#before(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">before</a><wbr>(<a href="../../webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;request,
  <a href="../../webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a>&nbsp;response)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">HTTP 요청 처리 전에 실행되는 전처리 메서드입니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -133,6 +155,21 @@ loadScripts(document, 'script');</script>
 <h3>before</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">before</span><wbr><span class="parameters">(<a href="../../webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;request,
  <a href="../../webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a>&nbsp;response)</span></div>
+<div class="block">HTTP 요청 처리 전에 실행되는 전처리 메서드입니다.
+ <p>
+ 이 메서드는 실제 비즈니스 로직이 실행되기 전에 호출되어 다음과 같은 횡단 관심사를 처리할 수 있습니다:
+ </p>
+ <ul>
+ <li>요청 로깅 및 모니터링</li>
+ <li>인증 및 권한 검사</li>
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>request</code> - 처리할 HTTP 요청 객체</dd>
+<dd><code>response</code> - 응답을 설정할 HTTP 응답 객체</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">RuntimeException</a></code> - 전처리 중 오류가 발생한 경우 (예: 인증 실패)</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -140,6 +177,18 @@ loadScripts(document, 'script');</script>
 <h3>after</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">after</span><wbr><span class="parameters">(<a href="../../webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a>&nbsp;request,
  <a href="../../webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a>&nbsp;response)</span></div>
+<div class="block">HTTP 요청 처리 후에 실행되는 후처리 메서드입니다.
+ <p>
+ 이 메서드는 실제 비즈니스 로직이 완료된 후에 호출되어 다음과 같은 횡단 관심사를 처리할 수 있습니다:
+ </p>
+ <ul>
+ <li>응답 로깅 및 성능 측정</li>
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>request</code> - 처리된 HTTP 요청 객체</dd>
+<dd><code>response</code> - 생성된 HTTP 응답 객체</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -54,7 +54,9 @@ loadScripts(document, 'script');</script>
 <h2 class="title" id="I:A">A</h2>
 <dl class="index">
 <dt><a href="webserver/http/HttpResponse.html#addAllowedMethod(webserver.http.enums.HttpMethod)" class="member-name-link">addAllowedMethod(HttpMethod)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">허용된 HTTP 메서드를 추가합니다.</div>
+</dd>
 <dt><a href="db/table/ArticleTable.html#addArticle(model.Article)" class="member-name-link">addArticle(Article)</a> - Static method in class db.table.<a href="db/table/ArticleTable.html" title="class in db.table">ArticleTable</a></dt>
 <dd>
 <div class="block">새로운 게시글을 데이터베이스에 추가합니다.</div>
@@ -74,7 +76,9 @@ loadScripts(document, 'script');</script>
 <div class="block">요청 처리 후에 실행됩니다.</div>
 </dd>
 <dt><a href="aop/advice/BaseAdvice.html#after(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">after(HttpRequest, HttpResponse)</a> - Method in interface aop.advice.<a href="aop/advice/BaseAdvice.html" title="interface in aop.advice">BaseAdvice</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청 처리 후에 실행되는 후처리 메서드입니다.</div>
+</dd>
 <dt><a href="aop/advice/LoggingAdvice.html#after(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">after(HttpRequest, HttpResponse)</a> - Method in class aop.advice.<a href="aop/advice/LoggingAdvice.html" title="class in aop.advice">LoggingAdvice</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpConstant.html#ALLOW" class="member-name-link">ALLOW</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
@@ -109,10 +113,20 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="model/Article.Builder.html" class="type-name-link" title="class in model">Article.Builder</a> - Class in <a href="model/package-summary.html">model</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#articleId()" class="member-name-link">articleId()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>articleId</code> record component.</div>
+</dd>
 <dt><a href="model/Article.Builder.html#articleId(java.lang.Long)" class="member-name-link">articleId(Long)</a> - Method in class model.<a href="model/Article.Builder.html" title="class in model">Article.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.Builder.html#articleId(java.lang.Long)" class="member-name-link">articleId(Long)</a> - Method in class model.<a href="model/Comment.Builder.html" title="class in model">Comment.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html" class="type-name-link" title="class in record">ArticleRecord</a> - Record Class in <a href="record/package-summary.html">record</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#%3Cinit%3E(java.lang.Long,java.lang.String,java.lang.String,java.lang.String,record.UserRecord)" class="member-name-link">ArticleRecord(Long, String, String, String, UserRecord)</a> - Constructor for record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>ArticleRecord</code> record class.</div>
+</dd>
 <dt><a href="db/table/ArticleTable.html" class="type-name-link" title="class in db.table">ArticleTable</a> - Class in <a href="db/table/package-summary.html">db.table</a></dt>
 <dd>
 <div class="block">게시글 테이블과 관련된 데이터베이스 작업을 처리하는 클래스입니다.</div>
@@ -135,6 +149,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="annotation/Authorized.html" class="type-name-link" title="annotation interface in annotation">Authorized</a> - Annotation Interface in <a href="annotation/package-summary.html">annotation</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/UserRecord.html#avatarUrl()" class="member-name-link">avatarUrl()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>avatarUrl</code> record component.</div>
+</dd>
 <dt><a href="model/User.Builder.html#avatarUrl(java.lang.String)" class="member-name-link">avatarUrl(String)</a> - Method in class model.<a href="model/User.Builder.html" title="class in model">User.Builder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -146,16 +164,24 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="exception/BadRequestException.html#%3Cinit%3E()" class="member-name-link">BadRequestException()</a> - Constructor for exception class exception.<a href="exception/BadRequestException.html" title="class in exception">BadRequestException</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="webserver/subhandler/FileSubHandler.html#BASE_PATH" class="member-name-link">BASE_PATH</a> - Static variable in class webserver.subhandler.<a href="webserver/subhandler/FileSubHandler.html" title="class in webserver.subhandler">FileSubHandler</a></dt>
+<dt><a href="webserver/subhandler/StaticSubHandler.html#BASE_PATH" class="member-name-link">BASE_PATH</a> - Static variable in class webserver.subhandler.<a href="webserver/subhandler/StaticSubHandler.html" title="class in webserver.subhandler">StaticSubHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="aop/advice/BaseAdvice.html" class="type-name-link" title="interface in aop.advice">BaseAdvice</a> - Interface in <a href="aop/advice/package-summary.html">aop.advice</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">AOP(Aspect-Oriented Programming) 어드바이스들의 기본 인터페이스입니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/adapter/BaseApiAdapter.html" class="type-name-link" title="interface in webserver.subhandler.adapter">BaseApiAdapter</a> - Interface in <a href="webserver/subhandler/adapter/package-summary.html">webserver.subhandler.adapter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">API 요청을 처리하는 어댑터들의 기본 인터페이스입니다.</div>
+</dd>
 <dt><a href="webserver/http/bodyparser/BaseBodyParser.html" class="type-name-link" title="interface in webserver.http.bodyparser">BaseBodyParser</a> - Interface in <a href="webserver/http/bodyparser/package-summary.html">webserver.http.bodyparser</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청 본문을 파싱하는 파서들의 기본 인터페이스입니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/BaseSubHandler.html" class="type-name-link" title="interface in webserver.subhandler">BaseSubHandler</a> - Interface in <a href="webserver/subhandler/package-summary.html">webserver.subhandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청을 처리하는 서브 핸들러들의 기본 인터페이스입니다.</div>
+</dd>
 <dt><a href="db/table/BaseTable.html" class="type-name-link" title="interface in db.table">BaseTable</a> - Interface in <a href="db/table/package-summary.html">db.table</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="aop/advice/AuthAdvice.html#before(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">before(HttpRequest, HttpResponse)</a> - Method in class aop.advice.<a href="aop/advice/AuthAdvice.html" title="class in aop.advice">AuthAdvice</a></dt>
@@ -163,7 +189,9 @@ loadScripts(document, 'script');</script>
 <div class="block">요청 처리 전에 인증을 확인합니다.</div>
 </dd>
 <dt><a href="aop/advice/BaseAdvice.html#before(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">before(HttpRequest, HttpResponse)</a> - Method in interface aop.advice.<a href="aop/advice/BaseAdvice.html" title="interface in aop.advice">BaseAdvice</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청 처리 전에 실행되는 전처리 메서드입니다.</div>
+</dd>
 <dt><a href="aop/advice/LoggingAdvice.html#before(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">before(HttpRequest, HttpResponse)</a> - Method in class aop.advice.<a href="aop/advice/LoggingAdvice.html" title="class in aop.advice">LoggingAdvice</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequest.html#body" class="member-name-link">body</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
@@ -192,14 +220,12 @@ loadScripts(document, 'script');</script>
 <div class="block">주어진 HTTP 요청이 등록된 API 엔드포인트와 일치하는지 확인합니다.</div>
 </dd>
 <dt><a href="webserver/subhandler/BaseSubHandler.html#canHandle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">canHandle(HttpRequest, HttpResponse)</a> - Method in interface webserver.subhandler.<a href="webserver/subhandler/BaseSubHandler.html" title="interface in webserver.subhandler">BaseSubHandler</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="webserver/subhandler/DirectorySubHandler.html#canHandle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">canHandle(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.<a href="webserver/subhandler/DirectorySubHandler.html" title="class in webserver.subhandler">DirectorySubHandler</a></dt>
 <dd>
-<div class="block">주어진 HTTP 요청이 디렉토리 요청인지 확인하고 처리 가능한지 판단합니다.</div>
+<div class="block">주어진 HTTP 요청과 응답을 이 핸들러가 처리할 수 있는지 판단합니다.</div>
 </dd>
-<dt><a href="webserver/subhandler/FileSubHandler.html#canHandle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">canHandle(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.<a href="webserver/subhandler/FileSubHandler.html" title="class in webserver.subhandler">FileSubHandler</a></dt>
+<dt><a href="webserver/subhandler/StaticSubHandler.html#canHandle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">canHandle(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.<a href="webserver/subhandler/StaticSubHandler.html" title="class in webserver.subhandler">StaticSubHandler</a></dt>
 <dd>
-<div class="block">주어진 HTTP 요청이 정적 파일 요청인지 확인합니다.</div>
+<div class="block">주어진 HTTP 요청이 정적 리소스 요청인지 확인합니다.</div>
 </dd>
 <dt><a href="webserver/http/HttpRequest.html#charset" class="member-name-link">charset</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
@@ -218,7 +244,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="webserver/http/HttpRequest.html#close()" class="member-name-link">close()</a> - Method in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#close()" class="member-name-link">close()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">출력 스트림을 닫고 자원을 해제합니다.</div>
+</dd>
 <dt><a href="webserver/http/enums/HttpConstant.html#CLOSE" class="member-name-link">CLOSE</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.html" class="type-name-link" title="class in model">Comment</a> - Class in <a href="model/package-summary.html">model</a></dt>
@@ -227,8 +255,18 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.Builder.html" class="type-name-link" title="class in model">Comment.Builder</a> - Class in <a href="model/package-summary.html">model</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/CommentRecord.html#commentId()" class="member-name-link">commentId()</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>commentId</code> record component.</div>
+</dd>
 <dt><a href="model/Comment.Builder.html#commentId(java.lang.Long)" class="member-name-link">commentId(Long)</a> - Method in class model.<a href="model/Comment.Builder.html" title="class in model">Comment.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/CommentRecord.html" class="type-name-link" title="class in record">CommentRecord</a> - Record Class in <a href="record/package-summary.html">record</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="record/CommentRecord.html#%3Cinit%3E(java.lang.Long,java.lang.String,record.UserRecord)" class="member-name-link">CommentRecord(Long, String, UserRecord)</a> - Constructor for record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>CommentRecord</code> record class.</div>
+</dd>
 <dt><a href="db/table/CommentTable.html" class="type-name-link" title="class in db.table">CommentTable</a> - Class in <a href="db/table/package-summary.html">db.table</a></dt>
 <dd>
 <div class="block">댓글 테이블과 관련된 데이터베이스 작업을 처리하는 클래스입니다.</div>
@@ -243,6 +281,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpConstant.html#CONNECTION" class="member-name-link">CONNECTION</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#content()" class="member-name-link">content()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>content</code> record component.</div>
+</dd>
+<dt><a href="record/CommentRecord.html#content()" class="member-name-link">content()</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>content</code> record component.</div>
+</dd>
 <dt><a href="model/Article.Builder.html#content(java.lang.String)" class="member-name-link">content(String)</a> - Method in class model.<a href="model/Article.Builder.html" title="class in model">Article.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.Builder.html#content(java.lang.String)" class="member-name-link">content(String)</a> - Method in class model.<a href="model/Comment.Builder.html" title="class in model">Comment.Builder</a></dt>
@@ -304,7 +350,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="webserver/http/enums/HttpConstant.html#CRLF" class="member-name-link">CRLF</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="exception/CustomRuntimeException.html" class="type-name-link" title="class in exception">CustomRuntimeException</a> - Exception Class in <a href="exception/package-summary.html">exception</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">웹 서버에서 발생하는 사용자 정의 런타임 예외의 기본 추상 클래스입니다.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:D">D</h2>
 <dl class="index">
@@ -318,6 +366,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="db/table/package-summary.html">db.table</a> - package db.table</dt>
 <dd>&nbsp;</dd>
+<dt><a href="model/User.html#DEFAULT_AVATAR" class="member-name-link">DEFAULT_AVATAR</a> - Static variable in class model.<a href="model/User.html" title="class in model">User</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpMethod.html#DELETE" class="member-name-link">DELETE</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpMethod.html" title="enum class in webserver.http.enums">HttpMethod</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/subhandler/adapter/user/DeleteUserAvatarApiAdapter.html" class="type-name-link" title="class in webserver.subhandler.adapter.user">DeleteUserAvatarApiAdapter</a> - Class in <a href="webserver/subhandler/adapter/user/package-summary.html">webserver.subhandler.adapter.user</a></dt>
@@ -325,12 +375,6 @@ loadScripts(document, 'script');</script>
 <div class="block">사용자 아바타 삭제 API를 처리하는 어댑터 클래스입니다.</div>
 </dd>
 <dt><a href="webserver/subhandler/adapter/user/DeleteUserAvatarApiAdapter.html#%3Cinit%3E()" class="member-name-link">DeleteUserAvatarApiAdapter()</a> - Constructor for class webserver.subhandler.adapter.user.<a href="webserver/subhandler/adapter/user/DeleteUserAvatarApiAdapter.html" title="class in webserver.subhandler.adapter.user">DeleteUserAvatarApiAdapter</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="webserver/subhandler/DirectorySubHandler.html" class="type-name-link" title="class in webserver.subhandler">DirectorySubHandler</a> - Class in <a href="webserver/subhandler/package-summary.html">webserver.subhandler</a></dt>
-<dd>
-<div class="block">디렉토리 요청을 처리하는 서브 핸들러 클래스입니다.</div>
-</dd>
-<dt><a href="webserver/subhandler/DirectorySubHandler.html#%3Cinit%3E()" class="member-name-link">DirectorySubHandler()</a> - Constructor for class webserver.subhandler.<a href="webserver/subhandler/DirectorySubHandler.html" title="class in webserver.subhandler">DirectorySubHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/cookie/CookieResponse.html#domain()" class="member-name-link">domain()</a> - Method in record class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a></dt>
 <dd>
@@ -341,12 +385,28 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
+<dt><a href="record/UserRecord.html#email()" class="member-name-link">email()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>email</code> record component.</div>
+</dd>
 <dt><a href="model/User.Builder.html#email(java.lang.String)" class="member-name-link">email(String)</a> - Method in class model.<a href="model/User.Builder.html" title="class in model">User.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequest.html#encoding" class="member-name-link">encoding</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/subhandler/ApiSubHandler.html#endpoints" class="member-name-link">endpoints</a> - Variable in class webserver.subhandler.<a href="webserver/subhandler/ApiSubHandler.html" title="class in webserver.subhandler">ApiSubHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="record/CommentRecord.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="record/UserRecord.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
 <dt><a href="webserver/http/cookie/CookieResponse.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a></dt>
 <dd>
 <div class="block">Indicates whether some other object is "equal to" this one.</div>
@@ -384,12 +444,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequest.html#files" class="member-name-link">files</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="webserver/subhandler/FileSubHandler.html" class="type-name-link" title="class in webserver.subhandler">FileSubHandler</a> - Class in <a href="webserver/subhandler/package-summary.html">webserver.subhandler</a></dt>
-<dd>
-<div class="block">정적 파일을 처리하는 서브 핸들러 클래스입니다.</div>
-</dd>
-<dt><a href="webserver/subhandler/FileSubHandler.html#%3Cinit%3E()" class="member-name-link">FileSubHandler()</a> - Constructor for class webserver.subhandler.<a href="webserver/subhandler/FileSubHandler.html" title="class in webserver.subhandler">FileSubHandler</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="db/table/UserTable.html#findUserById(java.lang.String)" class="member-name-link">findUserById(String)</a> - Static method in class db.table.<a href="db/table/UserTable.html" title="class in db.table">UserTable</a></dt>
 <dd>
 <div class="block">사용자 ID로 사용자 정보를 조회합니다.</div>
@@ -410,10 +464,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="util/PasswordUtil.html#generateSalt()" class="member-name-link">generateSalt()</a> - Static method in class util.<a href="util/PasswordUtil.html" title="class in util">PasswordUtil</a></dt>
 <dd>
 <div class="block">암호학적으로 안전한 랜덤 솔트를 생성합니다.</div>
-</dd>
-<dt><a href="session/SessionManager.html#generateSessionId(model.User)" class="member-name-link">generateSessionId(User)</a> - Static method in class session.<a href="session/SessionManager.html" title="class in session">SessionManager</a></dt>
-<dd>
-<div class="block">사용자에 대한 새로운 세션을 생성합니다.</div>
 </dd>
 <dt><a href="util/FileManager.html#get(java.lang.String)" class="member-name-link">get(String)</a> - Static method in class util.<a href="util/FileManager.html" title="class in util">FileManager</a></dt>
 <dd>
@@ -474,7 +524,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="model/User.html#getEmail()" class="member-name-link">getEmail()</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="exception/CustomRuntimeException.html#getFile()" class="member-name-link">getFile()</a> - Method in exception class exception.<a href="exception/CustomRuntimeException.html" title="class in exception">CustomRuntimeException</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">클라이언트에게 보여줄 에러 페이지 파일을 반환합니다.</div>
+</dd>
 <dt><a href="exception/InternalServerErrorException.html#getFile()" class="member-name-link">getFile()</a> - Method in exception class exception.<a href="exception/InternalServerErrorException.html" title="class in exception">InternalServerErrorException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="exception/MethodNotAllowedException.html#getFile()" class="member-name-link">getFile()</a> - Method in exception class exception.<a href="exception/MethodNotAllowedException.html" title="class in exception">MethodNotAllowedException</a></dt>
@@ -484,7 +536,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="exception/UnauthorizedException.html#getFile()" class="member-name-link">getFile()</a> - Method in exception class exception.<a href="exception/UnauthorizedException.html" title="class in exception">UnauthorizedException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#getHeaderSection()" class="member-name-link">getHeaderSection()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 헤더 섹션을 문자열로 반환합니다.</div>
+</dd>
 <dt><a href="model/Article.html#getImageUrl()" class="member-name-link">getImageUrl()</a> - Method in class model.<a href="model/Article.html" title="class in model">Article</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="util/AnnotationScanner.html#getInstances(java.lang.Class,java.lang.String)" class="member-name-link">getInstances(Class&lt;? extends Annotation&gt;, String)</a> - Static method in class util.<a href="util/AnnotationScanner.html" title="class in util">AnnotationScanner</a></dt>
@@ -532,7 +586,9 @@ loadScripts(document, 'script');</script>
 <div class="block">이 어댑터가 처리하는 HTTP 라우트 정보를 반환합니다.</div>
 </dd>
 <dt><a href="webserver/subhandler/adapter/BaseApiAdapter.html#getRoute()" class="member-name-link">getRoute()</a> - Method in interface webserver.subhandler.adapter.<a href="webserver/subhandler/adapter/BaseApiAdapter.html" title="interface in webserver.subhandler.adapter">BaseApiAdapter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">이 어댑터가 처리할 HTTP 경로와 메서드 정보를 반환합니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/adapter/comment/CreateCommentApiAdapter.html#getRoute()" class="member-name-link">getRoute()</a> - Method in class webserver.subhandler.adapter.comment.<a href="webserver/subhandler/adapter/comment/CreateCommentApiAdapter.html" title="class in webserver.subhandler.adapter.comment">CreateCommentApiAdapter</a></dt>
 <dd>
 <div class="block">이 어댑터가 처리하는 HTTP 라우트 정보를 반환합니다.</div>
@@ -564,7 +620,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="model/User.html#getSalt()" class="member-name-link">getSalt()</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="exception/CustomRuntimeException.html#getStatus()" class="member-name-link">getStatus()</a> - Method in exception class exception.<a href="exception/CustomRuntimeException.html" title="class in exception">CustomRuntimeException</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">이 예외에 해당하는 HTTP 상태 코드를 반환합니다.</div>
+</dd>
 <dt><a href="exception/InternalServerErrorException.html#getStatus()" class="member-name-link">getStatus()</a> - Method in exception class exception.<a href="exception/InternalServerErrorException.html" title="class in exception">InternalServerErrorException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="exception/MethodNotAllowedException.html#getStatus()" class="member-name-link">getStatus()</a> - Method in exception class exception.<a href="exception/MethodNotAllowedException.html" title="class in exception">MethodNotAllowedException</a></dt>
@@ -574,9 +632,13 @@ loadScripts(document, 'script');</script>
 <dt><a href="exception/UnauthorizedException.html#getStatus()" class="member-name-link">getStatus()</a> - Method in exception class exception.<a href="exception/UnauthorizedException.html" title="class in exception">UnauthorizedException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#getStatus()" class="member-name-link">getStatus()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">현재 설정된 HTTP 상태 코드와 메시지를 문자열로 반환합니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpResponse.html#getStatusLine()" class="member-name-link">getStatusLine()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 상태 라인을 문자열로 반환합니다.</div>
+</dd>
 <dt><a href="session/SessionManager.html#getUser(java.lang.String)" class="member-name-link">getUser(String)</a> - Static method in class session.<a href="session/SessionManager.html" title="class in session">SessionManager</a></dt>
 <dd>
 <div class="block">세션 ID에 해당하는 사용자 정보를 반환합니다.</div>
@@ -601,10 +663,24 @@ loadScripts(document, 'script');</script>
 <div class="block">API 요청을 처리합니다.</div>
 </dd>
 <dt><a href="webserver/subhandler/BaseSubHandler.html#handle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">handle(HttpRequest, HttpResponse)</a> - Method in interface webserver.subhandler.<a href="webserver/subhandler/BaseSubHandler.html" title="interface in webserver.subhandler">BaseSubHandler</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="webserver/subhandler/FileSubHandler.html#handle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">handle(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.<a href="webserver/subhandler/FileSubHandler.html" title="class in webserver.subhandler">FileSubHandler</a></dt>
 <dd>
-<div class="block">정적 파일 요청을 처리하여 응답을 생성합니다.</div>
+<div class="block">HTTP 요청을 처리하고 적절한 응답을 생성합니다.</div>
+</dd>
+<dt><a href="webserver/subhandler/StaticSubHandler.html#handle(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">handle(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.<a href="webserver/subhandler/StaticSubHandler.html" title="class in webserver.subhandler">StaticSubHandler</a></dt>
+<dd>
+<div class="block">정적 리소스 요청을 처리하여 HTTP 응답을 생성합니다.</div>
+</dd>
+<dt><a href="record/ArticleRecord.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="record/CommentRecord.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="record/UserRecord.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
 </dd>
 <dt><a href="webserver/http/cookie/CookieResponse.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a></dt>
 <dd>
@@ -637,13 +713,19 @@ loadScripts(document, 'script');</script>
 <dt><a href="webserver/http/HttpRequest.html#%3Cinit%3E()" class="member-name-link">HttpRequest()</a> - Constructor for class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequestParser.html" class="type-name-link" title="class in webserver.http">HttpRequestParser</a> - Class in <a href="webserver/http/package-summary.html">webserver.http</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청을 파싱하여 HttpRequest 객체로 변환하는 유틸리티 클래스입니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpRequestParser.html#%3Cinit%3E()" class="member-name-link">HttpRequestParser()</a> - Constructor for class webserver.http.<a href="webserver/http/HttpRequestParser.html" title="class in webserver.http">HttpRequestParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html" class="type-name-link" title="class in webserver.http">HttpResponse</a> - Class in <a href="webserver/http/package-summary.html">webserver.http</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 응답을 구성하고 클라이언트에게 전송하는 클래스입니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpResponse.html#%3Cinit%3E(java.io.OutputStream)" class="member-name-link">HttpResponse(OutputStream)</a> - Constructor for class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HttpResponse 객체를 생성합니다.</div>
+</dd>
 <dt><a href="webserver/http/enums/HttpStatus.html" class="type-name-link" title="enum class in webserver.http.enums">HttpStatus</a> - Enum Class in <a href="webserver/http/enums/package-summary.html">webserver.http.enums</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequest.html#httpVersion" class="member-name-link">httpVersion</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
@@ -653,6 +735,10 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="webserver/http/enums/HttpConstant.html#IDENTITY" class="member-name-link">IDENTITY</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#imageUrl()" class="member-name-link">imageUrl()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>imageUrl</code> record component.</div>
+</dd>
 <dt><a href="model/Article.Builder.html#imageUrl(java.lang.String)" class="member-name-link">imageUrl(String)</a> - Method in class model.<a href="model/Article.Builder.html" title="class in model">Article.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpStatus.html#INTERNAL_SERVER_ERROR" class="member-name-link">INTERNAL_SERVER_ERROR</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a></dt>
@@ -661,12 +747,12 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="exception/InternalServerErrorException.html#%3Cinit%3E()" class="member-name-link">InternalServerErrorException()</a> - Constructor for exception class exception.<a href="exception/InternalServerErrorException.html" title="class in exception">InternalServerErrorException</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="session/SessionManager.html#isAuthenticated(java.lang.String)" class="member-name-link">isAuthenticated(String)</a> - Static method in class session.<a href="session/SessionManager.html" title="class in session">SessionManager</a></dt>
-<dd>
-<div class="block">주어진 세션 ID가 유효한 인증된 세션인지 확인합니다.</div>
-</dd>
-<dt><a href="webserver/http/HttpResponse.html#isEmptyAllowedMethod()" class="member-name-link">isEmptyAllowedMethod()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
+<dt><a href="model/User.html#isEmpty()" class="member-name-link">isEmpty()</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="webserver/http/HttpResponse.html#isEmptyAllowedMethod()" class="member-name-link">isEmptyAllowedMethod()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
+<dd>
+<div class="block">허용된 HTTP 메서드가 설정되어 있는지 확인합니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpRequest.html#isKeepAlive()" class="member-name-link">isKeepAlive()</a> - Method in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -739,7 +825,9 @@ loadScripts(document, 'script');</script>
 <h2 class="title" id="I:M">M</h2>
 <dl class="index">
 <dt><a href="webserver/WebServer.html#main(java.lang.String%5B%5D)" class="member-name-link">main(String[])</a> - Static method in class webserver.<a href="webserver/WebServer.html" title="class in webserver">WebServer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">웹 서버 애플리케이션의 메인 진입점입니다.</div>
+</dd>
 <dt><a href="webserver/http/cookie/CookieResponse.html#maxAge()" class="member-name-link">maxAge()</a> - Method in record class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a></dt>
 <dd>
 <div class="block">Returns the value of the <code>maxAge</code> record component.</div>
@@ -773,6 +861,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:N">N</h2>
 <dl class="index">
+<dt><a href="record/UserRecord.html#name()" class="member-name-link">name()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>name</code> record component.</div>
+</dd>
 <dt><a href="model/User.Builder.html#name(java.lang.String)" class="member-name-link">name(String)</a> - Method in class model.<a href="model/User.Builder.html" title="class in model">User.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpStatus.html#NO_CONTENT" class="member-name-link">NO_CONTENT</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a></dt>
@@ -798,7 +890,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="webserver/http/HttpRequest.html#params" class="member-name-link">params</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequestParser.html#parse(java.io.InputStream)" class="member-name-link">parse(InputStream)</a> - Static method in class webserver.http.<a href="webserver/http/HttpRequestParser.html" title="class in webserver.http">HttpRequestParser</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">InputStream에서 HTTP 요청을 파싱하여 HttpRequest 객체를 생성합니다.</div>
+</dd>
 <dt><a href="webserver/http/UrlParser.html#parse(java.lang.String)" class="member-name-link">parse(String)</a> - Static method in class webserver.http.<a href="webserver/http/UrlParser.html" title="class in webserver.http">UrlParser</a></dt>
 <dd>
 <div class="block">URI의 쿼리 문자열을 기본 문자 인코딩으로 파싱합니다.</div>
@@ -808,7 +902,9 @@ loadScripts(document, 'script');</script>
 <div class="block">URI의 쿼리 문자열을 지정된 문자 인코딩으로 파싱합니다.</div>
 </dd>
 <dt><a href="webserver/http/bodyparser/BaseBodyParser.html#parse(webserver.http.HttpRequest)" class="member-name-link">parse(HttpRequest)</a> - Method in interface webserver.http.bodyparser.<a href="webserver/http/bodyparser/BaseBodyParser.html" title="interface in webserver.http.bodyparser">BaseBodyParser</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 요청 본문을 파싱하여 HttpRequest 객체에 데이터를 저장합니다.</div>
+</dd>
 <dt><a href="webserver/http/bodyparser/MultiPartFormDataBodyParser.html#parse(webserver.http.HttpRequest)" class="member-name-link">parse(HttpRequest)</a> - Method in class webserver.http.bodyparser.<a href="webserver/http/bodyparser/MultiPartFormDataBodyParser.html" title="class in webserver.http.bodyparser">MultiPartFormDataBodyParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/bodyparser/XFormUrlencodedBodyParser.html#parse(webserver.http.HttpRequest)" class="member-name-link">parse(HttpRequest)</a> - Method in class webserver.http.bodyparser.<a href="webserver/http/bodyparser/XFormUrlencodedBodyParser.html" title="class in webserver.http.bodyparser">XFormUrlencodedBodyParser</a></dt>
@@ -848,10 +944,16 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
+<dt><a href="record/package-summary.html">record</a> - package record</dt>
+<dd>&nbsp;</dd>
 <dt><a href="webserver/RequestHandler.html" class="type-name-link" title="class in webserver">RequestHandler</a> - Class in <a href="webserver/package-summary.html">webserver</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">클라이언트의 HTTP 요청을 처리하는 핸들러 클래스입니다.</div>
+</dd>
 <dt><a href="webserver/RequestHandler.html#%3Cinit%3E(java.net.Socket)" class="member-name-link">RequestHandler(Socket)</a> - Constructor for class webserver.<a href="webserver/RequestHandler.html" title="class in webserver">RequestHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">RequestHandler의 생성자입니다.</div>
+</dd>
 <dt><a href="webserver/http/Route.html" class="type-name-link" title="class in webserver.http">Route</a> - Record Class in <a href="webserver/http/package-summary.html">webserver.http</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/Route.html#%3Cinit%3E(webserver.http.enums.HttpMethod,java.lang.String)" class="member-name-link">Route(HttpMethod, String)</a> - Constructor for record class webserver.http.<a href="webserver/http/Route.html" title="class in webserver.http">Route</a></dt>
@@ -859,7 +961,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates an instance of a <code>Route</code> record class.</div>
 </dd>
 <dt><a href="webserver/RequestHandler.html#run()" class="member-name-link">run()</a> - Method in class webserver.<a href="webserver/RequestHandler.html" title="class in webserver">RequestHandler</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">클라이언트의 HTTP 요청을 처리하는 메인 실행 메서드입니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/adapter/article/CreateArticleApiAdapter.html#run(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">run(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.adapter.article.<a href="webserver/subhandler/adapter/article/CreateArticleApiAdapter.html" title="class in webserver.subhandler.adapter.article">CreateArticleApiAdapter</a></dt>
 <dd>
 <div class="block">게시글 생성 요청을 처리합니다.</div>
@@ -881,7 +985,9 @@ loadScripts(document, 'script');</script>
 <div class="block">로그아웃 요청을 처리합니다.</div>
 </dd>
 <dt><a href="webserver/subhandler/adapter/BaseApiAdapter.html#run(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">run(HttpRequest, HttpResponse)</a> - Method in interface webserver.subhandler.adapter.<a href="webserver/subhandler/adapter/BaseApiAdapter.html" title="interface in webserver.subhandler.adapter">BaseApiAdapter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">API 요청을 처리하고 적절한 응답을 생성합니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/adapter/comment/CreateCommentApiAdapter.html#run(webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">run(HttpRequest, HttpResponse)</a> - Method in class webserver.subhandler.adapter.comment.<a href="webserver/subhandler/adapter/comment/CreateCommentApiAdapter.html" title="class in webserver.subhandler.adapter.comment">CreateCommentApiAdapter</a></dt>
 <dd>
 <div class="block">댓글 생성 요청을 처리합니다.</div>
@@ -932,7 +1038,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="webserver/http/cookie/CookieResponseBuilder.html#secure(boolean)" class="member-name-link">secure(boolean)</a> - Method in class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponseBuilder.html" title="class in webserver.http.cookie">CookieResponseBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#send()" class="member-name-link">send()</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">구성된 HTTP 응답을 클라이언트에게 전송합니다.</div>
+</dd>
 <dt><a href="webserver/subhandler/ErrorSubHandler.html#sendResponse(exception.CustomRuntimeException,webserver.http.HttpRequest,webserver.http.HttpResponse)" class="member-name-link">sendResponse(CustomRuntimeException, HttpRequest, HttpResponse)</a> - Static method in class webserver.subhandler.<a href="webserver/subhandler/ErrorSubHandler.html" title="class in webserver.subhandler">ErrorSubHandler</a></dt>
 <dd>
 <div class="block">커스텀 예외에 따른 에러 응답을 생성하고 전송합니다.</div>
@@ -947,18 +1055,18 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="session/SessionManager.html#%3Cinit%3E()" class="member-name-link">SessionManager()</a> - Constructor for class session.<a href="session/SessionManager.html" title="class in session">SessionManager</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="session/SessionManager.Session.html" class="type-name-link" title="class in session">SessionManager.Session</a> - Class in <a href="session/package-summary.html">session</a></dt>
-<dd>
-<div class="block">사용자 세션 정보를 담는 내부 클래스입니다.</div>
-</dd>
 <dt><a href="webserver/http/enums/HttpConstant.html#SET_COOKIE" class="member-name-link">SET_COOKIE</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.html#setAvatarUrl(java.lang.String)" class="member-name-link">setAvatarUrl(String)</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#setBody(java.io.File)" class="member-name-link">setBody(File)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">파일의 내용을 응답 본문으로 설정합니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpResponse.html#setBody(java.lang.String)" class="member-name-link">setBody(String)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">문자열을 응답 본문으로 설정합니다.</div>
+</dd>
 <dt><a href="model/Article.html#setComments(java.util.List)" class="member-name-link">setComments(List&lt;Comment&gt;)</a> - Method in class model.<a href="model/Article.html" title="class in model">Article</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Article.html#setContent(java.lang.String)" class="member-name-link">setContent(String)</a> - Method in class model.<a href="model/Article.html" title="class in model">Article</a></dt>
@@ -966,11 +1074,17 @@ loadScripts(document, 'script');</script>
 <dt><a href="model/Comment.html#setContent(java.lang.String)" class="member-name-link">setContent(String)</a> - Method in class model.<a href="model/Comment.html" title="class in model">Comment</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#setCookie(webserver.http.cookie.CookieResponse)" class="member-name-link">setCookie(CookieResponse)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 응답에 쿠키를 추가합니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpResponse.html#setHeader(java.io.File)" class="member-name-link">setHeader(File)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">파일 정보를 기반으로 적절한 HTTP 헤더를 자동으로 설정합니다.</div>
+</dd>
 <dt><a href="webserver/http/HttpResponse.html#setHeader(java.lang.String,java.lang.String)" class="member-name-link">setHeader(String, String)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 헤더를 설정합니다.</div>
+</dd>
 <dt><a href="model/Article.html#setImageUrl(java.lang.String)" class="member-name-link">setImageUrl(String)</a> - Method in class model.<a href="model/Article.html" title="class in model">Article</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.html#setName(java.lang.String)" class="member-name-link">setName(String)</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
@@ -978,10 +1092,18 @@ loadScripts(document, 'script');</script>
 <dt><a href="model/User.html#setPassword(java.lang.String)" class="member-name-link">setPassword(String)</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpResponse.html#setStatus(webserver.http.enums.HttpStatus)" class="member-name-link">setStatus(HttpStatus)</a> - Method in class webserver.http.<a href="webserver/http/HttpResponse.html" title="class in webserver.http">HttpResponse</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">HTTP 응답의 상태를 설정합니다.</div>
+</dd>
 <dt><a href="model/Article.html#setUser(model.User)" class="member-name-link">setUser(User)</a> - Method in class model.<a href="model/Article.html" title="class in model">Article</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.html#setUser(model.User)" class="member-name-link">setUser(User)</a> - Method in class model.<a href="model/Comment.html" title="class in model">Comment</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="webserver/subhandler/StaticSubHandler.html" class="type-name-link" title="class in webserver.subhandler">StaticSubHandler</a> - Class in <a href="webserver/subhandler/package-summary.html">webserver.subhandler</a></dt>
+<dd>
+<div class="block">정적 리소스(파일 및 디렉토리) 요청을 처리하는 통합 서브 핸들러 클래스입니다.</div>
+</dd>
+<dt><a href="webserver/subhandler/StaticSubHandler.html#%3Cinit%3E()" class="member-name-link">StaticSubHandler()</a> - Constructor for class webserver.subhandler.<a href="webserver/subhandler/StaticSubHandler.html" title="class in webserver.subhandler">StaticSubHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/enums/HttpConstant.html#STRICT" class="member-name-link">STRICT</a> - Enum constant in enum class webserver.http.enums.<a href="webserver/http/enums/HttpConstant.html" title="enum class in webserver.http.enums">HttpConstant</a></dt>
 <dd>&nbsp;</dd>
@@ -994,7 +1116,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="annotation/SubHandler.html" class="type-name-link" title="annotation interface in annotation">SubHandler</a> - Annotation Interface in <a href="annotation/package-summary.html">annotation</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/bodyparser/BaseBodyParser.html#supports(webserver.http.enums.HttpConstant)" class="member-name-link">supports(HttpConstant)</a> - Method in interface webserver.http.bodyparser.<a href="webserver/http/bodyparser/BaseBodyParser.html" title="interface in webserver.http.bodyparser">BaseBodyParser</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">이 파서가 특정 Content-Type을 지원하는지 확인합니다.</div>
+</dd>
 <dt><a href="webserver/http/bodyparser/MultiPartFormDataBodyParser.html#supports(webserver.http.enums.HttpConstant)" class="member-name-link">supports(HttpConstant)</a> - Method in class webserver.http.bodyparser.<a href="webserver/http/bodyparser/MultiPartFormDataBodyParser.html" title="class in webserver.http.bodyparser">MultiPartFormDataBodyParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/bodyparser/XFormUrlencodedBodyParser.html#supports(webserver.http.enums.HttpConstant)" class="member-name-link">supports(HttpConstant)</a> - Method in class webserver.http.bodyparser.<a href="webserver/http/bodyparser/XFormUrlencodedBodyParser.html" title="class in webserver.http.bodyparser">XFormUrlencodedBodyParser</a></dt>
@@ -1016,6 +1140,18 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.html#toString()" class="member-name-link">toString()</a> - Method in class model.<a href="model/User.html" title="class in model">User</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#toString()" class="member-name-link">toString()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="record/CommentRecord.html#toString()" class="member-name-link">toString()</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="record/UserRecord.html#toString()" class="member-name-link">toString()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
 <dt><a href="webserver/http/cookie/CookieResponse.html#toString()" class="member-name-link">toString()</a> - Method in record class webserver.http.cookie.<a href="webserver/http/cookie/CookieResponse.html" title="class in webserver.http.cookie">CookieResponse</a></dt>
 <dd>
 <div class="block">Returns a string representation of this record class.</div>
@@ -1071,6 +1207,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/HttpRequest.html#user" class="member-name-link">user</a> - Variable in class webserver.http.<a href="webserver/http/HttpRequest.html" title="class in webserver.http">HttpRequest</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#user()" class="member-name-link">user()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>user</code> record component.</div>
+</dd>
+<dt><a href="record/CommentRecord.html#user()" class="member-name-link">user()</a> - Method in record class record.<a href="record/CommentRecord.html" title="class in record">CommentRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>user</code> record component.</div>
+</dd>
 <dt><a href="model/Article.Builder.html#user(model.User)" class="member-name-link">user(User)</a> - Method in class model.<a href="model/Article.Builder.html" title="class in model">Article.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.html" class="type-name-link" title="class in model">User</a> - Class in <a href="model/package-summary.html">model</a></dt>
@@ -1079,12 +1223,26 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.Builder.html" class="type-name-link" title="class in model">User.Builder</a> - Class in <a href="model/package-summary.html">model</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/ArticleRecord.html#userId()" class="member-name-link">userId()</a> - Method in record class record.<a href="record/ArticleRecord.html" title="class in record">ArticleRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>userId</code> record component.</div>
+</dd>
+<dt><a href="record/UserRecord.html#userId()" class="member-name-link">userId()</a> - Method in record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Returns the value of the <code>userId</code> record component.</div>
+</dd>
 <dt><a href="model/Article.Builder.html#userId(java.lang.String)" class="member-name-link">userId(String)</a> - Method in class model.<a href="model/Article.Builder.html" title="class in model">Article.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/Comment.Builder.html#userId(java.lang.String)" class="member-name-link">userId(String)</a> - Method in class model.<a href="model/Comment.Builder.html" title="class in model">Comment.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="model/User.Builder.html#userId(java.lang.String)" class="member-name-link">userId(String)</a> - Method in class model.<a href="model/User.Builder.html" title="class in model">User.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="record/UserRecord.html" class="type-name-link" title="class in record">UserRecord</a> - Record Class in <a href="record/package-summary.html">record</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="record/UserRecord.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">UserRecord(String, String, String, String)</a> - Constructor for record class record.<a href="record/UserRecord.html" title="class in record">UserRecord</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>UserRecord</code> record class.</div>
+</dd>
 <dt><a href="db/table/UserTable.html" class="type-name-link" title="class in db.table">UserTable</a> - Class in <a href="db/table/package-summary.html">db.table</a></dt>
 <dd>
 <div class="block">사용자 테이블과 관련된 데이터베이스 작업을 처리하는 클래스입니다.</div>
@@ -1137,7 +1295,9 @@ the order they are declared.</div>
 <dt><a href="webserver/package-summary.html">webserver</a> - package webserver</dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/WebServer.html" class="type-name-link" title="class in webserver">WebServer</a> - Class in <a href="webserver/package-summary.html">webserver</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">웹 애플리케이션 서버를 구동하고 클라이언트 요청을 처리하는 메인 클래스입니다.</div>
+</dd>
 <dt><a href="webserver/WebServer.html#%3Cinit%3E()" class="member-name-link">WebServer()</a> - Constructor for class webserver.<a href="webserver/WebServer.html" title="class in webserver">WebServer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="webserver/http/package-summary.html">webserver.http</a> - package webserver.http</dt>

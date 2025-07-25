@@ -141,10 +141,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFile()" class="member-name-link">getFile</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">클라이언트에게 보여줄 에러 페이지 파일을 반환합니다.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../webserver/http/enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStatus()" class="member-name-link">getStatus</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">이 예외에 해당하는 HTTP 상태 코드를 반환합니다.</div>
+</div>
 </div>
 </div>
 </div>
@@ -183,9 +187,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getFile()">
 <h3>getFile</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a></span>&nbsp;<span class="element-name">getFile</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="CustomRuntimeException.html#getFile()">CustomRuntimeException</a></code></span></div>
+<div class="block">클라이언트에게 보여줄 에러 페이지 파일을 반환합니다.
+ <p>
+ 이 메서드가 반환하는 파일은 ErrorSubHandler에 의해 HTTP 응답의 본문으로 사용됩니다. 일반적으로 static/error/ 디렉토리의 HTML 파일들이
+ 사용됩니다 (예: 404.html, 500.html 등).
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CustomRuntimeException.html#getFile()">getFile</a></code>&nbsp;in class&nbsp;<code><a href="CustomRuntimeException.html" title="class in exception">CustomRuntimeException</a></code></dd>
+<dt>Returns:</dt>
+<dd>에러 페이지로 사용할 파일 객체</dd>
 </dl>
 </section>
 </li>
@@ -193,9 +205,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getStatus()">
 <h3>getStatus</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../webserver/http/enums/HttpStatus.html" title="enum class in webserver.http.enums">HttpStatus</a></span>&nbsp;<span class="element-name">getStatus</span>()</div>
+<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="CustomRuntimeException.html#getStatus()">CustomRuntimeException</a></code></span></div>
+<div class="block">이 예외에 해당하는 HTTP 상태 코드를 반환합니다.
+ <p>
+ 반환된 상태 코드는 ErrorSubHandler에 의해 HTTP 응답의 상태 라인에 설정됩니다. 각 구현체는 적절한 HTTP 상태 코드를 반환해야 합니다 (예: 404
+ Not Found, 401 Unauthorized 등).
+ </p></div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="CustomRuntimeException.html#getStatus()">getStatus</a></code>&nbsp;in class&nbsp;<code><a href="CustomRuntimeException.html" title="class in exception">CustomRuntimeException</a></code></dd>
+<dt>Returns:</dt>
+<dd>이 예외에 해당하는 HTTP 상태 코드</dd>
 </dl>
 </section>
 </li>
