@@ -22,6 +22,5 @@ Language
  > <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=#E0234E"/>
  > <img src="https://img.shields.io/badge/typescript-%233178C6"/>
 
-![mekind's GitHub stats](https://github-readme-stats.vercel.app/api?username=mekind&show_icons=true&theme=radical)
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=mekind)](https://solved.ac/mekind/)
